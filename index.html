@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <div class="header">
+      <div class="nav">
+        <div class="logo_head">
+          <img src="logo.png" alt="Your project logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <!-- Add your navigation links here -->
+            <li><a href="#">Home</a></li>
+            <li><a href="Cart.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="icons">
+            <!-- Add your social media icons here -->
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
+                alt="Search"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/?size=100&id=87&format=png&color=000000"
+                alt="Fav"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/?size=100&id=9671&format=png&color=000000"
+                alt="Cart"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <img class="hero_img" src="hero.jpeg" alt="" />
+      <img
+        class="Logo_img"
+        src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OJvEBQx8ME39MkTmQliRdw~HZqd~-x6T94e~femNDpx9EOfjyOH8FMWzvDtARS8YxA2-9A4Lg54ygIdByoRV41YiCP9vqZvjIrJG3ytY1HT~w~ji3f1-Zc2Hl8WZ4bsdy6ZELlVNHMj1--ZC1BgYQQ~pWYXVWDC3i1o10JJkT-taH3xx3fONGcJq3eGIQdg3NRCSCf84MyJvuWunVtVc0-LPauDYRsFg99-qII9yvduvMOP9av0k1s-Em9IB3lUmAsEgqytHLL9oReUS~rxD~4nB0zVt1rN1rjuFI0FOC2YtegMkHgGItaehqfyb3cE~451Aff9OS-QpCfHVvqXexA__"
+        alt=""
+      />
+      <div class="text">
+        <h1>Cart</h1>
+      </div>
+      <div class="text_pagename">
+        <h3><span>Home > </span>Cart</h3>
+      </div>
+    </div>
+
+    <div class="cart-container">
+      <div class="cart-items" id="cart-items">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th class="subtotal-header">Subtotal</th>
+            <th></th>
+          </tr>
+          <tr class="cart-row">
+            <td class="cart-item">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/2ac4/13c1/917ac944454e358f73d0af67e1f1b74e?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CvY76bqm3cK8r3v6h6uQTji-BrKUkWXydc2qNfbs5SfJrkHb~j1EMcemZfIDWzYP~7BzMH9UFyTBImETD-m~kgYQJevi6sevDDOuxxc709EHEP1j~F7hgceP6R7Tl47EXiWG7jVPP7YTqvgGyBoM20sJf4y5HbavlhAkNb5Wbk5s276JrMlxghcATboZyGDISfF5eHDCFQtdwnGjyr9l~aii5RE8bbLIzJDmbY87J6CcfEXAFX58M815MNEHeFh5vaosTAfgjzI5OoUF5ud8rOv8Pap~u-HqDYar7S9wt3-~6HBWP9zTrr36085dSh8ZYeQWFR~DSWhptGM5n2rrDA__"
+                alt="Asgaard Sofa"
+              />
+            </td>
+            <td>Asgaard Sofa</td>
+            <td class="item-price">Rs. 250,000.00</td>
+            <td>
+              <input type="number" value="1" class="quantity-input" min="1" />
+            </td>
+            <td class="item-subtotal">Rs. 250,000.00</td>
+            <td class="delete-icon" style="cursor: pointer">🗑️</td>
+          </tr>
+        </table>
+      </div>
+      <div class="cart-summary">
+        <h3>Cart Totals</h3>
+        <p>
+          Subtotal:
+          <span id="subtotal-amount" style="color: gray">Rs. 250,000.00</span>
+        </p>
+        <p>
+          Total:
+          <span id="total-amount" style="color: goldenrod; font-weight: bold"
+            >Rs. 250,000.00</span
+          >
+        </p>
+        <button class="checkout-btn">Check Out</button>
+      </div>
+    </div>
+
+    <div class="footer-panel">
+      <div class="footer-item">
+        <img src="trophy-100.png" alt="High Quality" />
+
+        <h4>High Quality</h4>
+        <p>Crafted from top materials</p>
+      </div>
+      <div class="footer-item">
+        <img src="guarantee-100.png" alt="Warranty Protection" />
+        <h4>Warranty Protection</h4>
+        <p>Over 2 years</p>
+      </div>
+      <div class="footer-item">
+        <img src="shipping.png" alt="Free Shipping" />
+        <h4>Free Shipping</h4>
+        <p>Order over 150 $</p>
+      </div>
+      <div class="footer-item">
+        <img src="24-hours-day-support-100.png" alt="24/7 Support" />
+        <h4>24 / 7 Support</h4>
+        <p>Dedicated support</p>
+      </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
