@@ -6,6 +6,76 @@ body {
     text-align: center;
 }
 
+.header {
+    height: 30%;
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #fff;
+  }
+  .nav{
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+  }
+  .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+  .menu ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    &:hover{
+      color: #22222298;
+    }
+  }
+  .logo_head{
+    height: 100%;
+    width: 30%;
+    padding: 15px 15px;
+  }
+  .icons{
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .icons a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .icons a img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+    &:last-child{
+      margin-right: 10;
+    }
+  }
+
 .cart-title {
     margin-top: 20px;
     font-size: 28px;
